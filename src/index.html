@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular Hello World Project</title>
+
+        <!-- Note that all paths below are based on where they are at run time. This may be different than what the directory looks like at build time if you publish the site (using gulp or a .war file for instance). This is very common in production environments. -->
+        
+        <link rel="stylesheet" href="/styles/global.css" />
+        <link rel="shortcut icon" type="image/png" href="assets/apple-touch-icon-precomposed.png"> <!-- apple-touch-icon-precomposed.png is the most compatible name across platforms -->
+        <script src="/jspm_packages/system.js"></script> <!-- Include the SystemJS loader. This has to be done in HTML. After this, code can be loaded using SystemJS. -->
+        <script src="/config.js"></script>
+        <script>System.import("/main")</script> <!-- Import the main.js file using the SystemJS loader. Main.js is the functional start point of the application (index.html is just the landing point) -->
+    </head>
+    <body>
+        <ui-view></ui-view> <!-- This is where ui-router shows pages -->
+    </body>
+</html>

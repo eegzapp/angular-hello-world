@@ -1,0 +1,15 @@
+
+<!--
+    This is a view. It is what the user sees.
+
+    In Angular, views bind to data exposed through a controller.
+    This view is associated with the helloController in hello-controller.js via the ui-router configuration in route-config.js
+    
+    If we weren't using ui-router, then this view would have to explicitly state which controller it was associated with via the 'ng-controller' property.
+    See https://docs.angularjs.org/guide/controller
+
+    helloVm is a representation of the controller that was defined in route-config.js.
+    The 'Vm' stands for 'View Model'.
+    Ending these sorts of references with "Vm" appears to be a standard practice.
+ -->
+<div>{{helloVm.helloMessage}}</div>
