@@ -10,9 +10,9 @@ Aurelia is gaining popularity and Angular 2.0 is being built out at this time, s
 
 Setup Steps (can expand / update / fix if there's interest).
 
-## Setup Steps
+# Setup Steps
 
-### SETUP ENVIRONMENT
+##SETUP ENVIRONMENT
 
 1. Install an IDE
 	- Popular web development products
