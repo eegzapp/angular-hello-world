@@ -89,6 +89,7 @@ jspm install (not init!) will rebuid the jspm_packages folder.
 
 18. Add a start point for the project
     - vi index.html (in src directory)
+    ```HTML
 <!DOCTYPE html>
 <html>
     <head>
@@ -105,6 +106,7 @@ jspm install (not init!) will rebuid the jspm_packages folder.
         <ui-view></ui-view> <!-- This is where ui-router shows pages -->
     </body>
 </html>
+	```
     - Note that all paths below are based on where they are at run time. This may be different than what the directory looks like at build time if you publish the site (using gulp or a .war file for instance). This is very common in production environments.
 
 19. Add the application start point
