@@ -10,9 +10,9 @@ Aurelia is gaining popularity and Angular 2.0 is being built out at this time, s
 
 Setup Steps (can expand / update / fix if there's interest).
 
-# Setup Steps
+# Steps used to create this project
 
-##SETUP ENVIRONMENT
+## SETUP ENVIRONMENT
 
 1. Install an IDE
 	- Popular web development products
@@ -65,7 +65,7 @@ Setup Steps (can expand / update / fix if there's interest).
 12. Install your JS framework (usually Angular or Aurelia) jspm install aurelia-framework (note there’s no –save for JSPM)
     - This adds packages to jspm_packages and entries to package.json.
     - Note: like node_modules, the jspm_packages folder is built by package.json, so it doesn’t need to be checked in. 
-jspm install (not init!) will rebuid the jspm_packages folder.
+jspm install (not init!) will rebuild the jspm_packages folder.
 13. Install additional packages/frameworks
     - UI framework like Angular Material
     - Routing framework like github:angular-ui/ui-router
@@ -74,7 +74,7 @@ jspm install (not init!) will rebuid the jspm_packages folder.
     	1. node_modules
         2. jspm_packages
 
-##CREATE ACTUAL APPLICATION CODE
+## CREATE ACTUAL APPLICATION CODE
 
 15. Create a directory to put all your code in (code that runs application, not project setup stuff)
     - mkdir src at top level of project
@@ -89,7 +89,7 @@ jspm install (not init!) will rebuid the jspm_packages folder.
 
 18. Add a start point for the project
     - vi index.html (in src directory)
-    ```HTML
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -106,14 +106,13 @@ jspm install (not init!) will rebuid the jspm_packages folder.
         <ui-view></ui-view> <!-- This is where ui-router shows pages -->
     </body>
 </html>
-	```
-    - Note that all paths below are based on where they are at run time. This may be different than what the directory looks like at build time if you publish the site (using gulp or a .war file for instance). This is very common in production environments.
+```
 
 19. Add the application start point
     - vi main.js (in src directory)
 
 
-##SETUP THE BUILD / RUN SCRIPT
+## SETUP THE BUILD / RUN SCRIPT
 
 20. Install some base packages
 npm install jspm --save-dev
@@ -129,7 +128,7 @@ npm install jspm --save-dev
 
 
 
-##PUSH EVERYTHING TO SOURCE CONTROL
+## PUSH EVERYTHING TO SOURCE CONTROL
 
 21. Add all your files (that aren’t being ignored due to .gitignore) to git tracking
     - git add .    (notice the ‘.’ there)
@@ -140,7 +139,7 @@ npm install jspm --save-dev
 
 
 
-##COMMON ERRORS
+## COMMON ERRORS
 
 - “Argument 'module' is not a function, got Object”
 	You may have tried to use a module reference rather than a module name in the dependency section of a module.

@@ -22,7 +22,7 @@
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "jspm": "^0.16.48"
+    "jspm": "^0.16.53"
   },
   "babel": {
     "presets": [
