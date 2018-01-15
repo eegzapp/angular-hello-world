@@ -31,7 +31,7 @@ Setup Steps (can expand / update / fix if there's interest).
 5. Setup project folder
 	- Using github.com
     	1. Create a repository there (on the website)
-    	2. Clone the repository locally git clone https://github/user/project
+    	2. Clone the repository locally: git clone https://<user>@github.com/<user>/<project>
     - Using your own github or other SCM
 		1. Create a project folder for the remote repository and CD into it.
         2. Initialize empty remote repository: git init --bare <repositoryname>.git
