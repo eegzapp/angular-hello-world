@@ -16,22 +16,22 @@ Setup Steps (can expand / update / fix if there's interest).
 
 1. Install an IDE
 	- Popular web development products
-          1. Visual Studio
-          2. Visual Studio Code
-          3. Web Storm
+        - Visual Studio
+        - Visual Studio Code
+        - Web Storm
 
 2. Install static code analysis plugins / tools
-     A. Some suggestions
-          i. jshint (for JS) (available for many environments)
-          ii. stylelint (for CSS) (something I found for Visual Studio Code)
-          iii. HTMLHint (for HTML) (something I found for Visual Studio Code)
+    - Some suggestions
+        - jshint (for JS) (available for many environments)
+        - stylelint (for CSS) (something I found for Visual Studio Code)
+        - HTMLHint (for HTML) (something I found for Visual Studio Code)
 
 3. Setup Source control on the local machine (Git for example)
 4. Install NodeJS (system dependent binary)
 5. Setup project folder
 	- Using github.com
     	1. Create a repository there (on the website)
-    	2. Clone the repository locally: git clone https://<user>@github.com/<user>/<project>
+    	2. Clone the repository locally: git clone https://[githubusername]@github.com/[githubusername]/[project]
     - Using your own github or other SCM
 		1. Create a project folder for the remote repository and CD into it.
         2. Initialize empty remote repository: git init --bare <repositoryname>.git
@@ -40,12 +40,12 @@ Setup Steps (can expand / update / fix if there's interest).
 7. Initialize NPM for this folder (npm init) (take all defaults usually)
 	- Creates the node_modules folder and the package.json file
     - Note: package.json is used to generate node_modules, so check-in package.json, but not node_modules
-          i. git add package.json
-         ii. git commit -m “your commit message”
-        iii. git push origin (‘origin’ is the default name created by github)
-8. Install Node based packages (npm install -g <package> <package> …)
-     (The -g is a global install flag. Use for development packages/tools)
-     (--save or --save-dev will remember the install by writing it to the package.json file)
+        1. git add package.json
+        2. git commit -m “your commit message”
+        3. git push origin (‘origin’ is the default name created by github)
+8. Install Node based packages (npm install -g <package> <package> …)  
+    (The -g is a global install flag. Use for development packages/tools)  
+    (--save or --save-dev will remember the install by writing it to the package.json file)
 	- npm install jspm -g (javascript package manager globally installed to get the jspm CLI)
     - npm install http-server -g (light-weight server, will serve root from whatever directory you run it in)
     - Anything else you want to install (mostly dev tools like A & B above)
@@ -59,8 +59,8 @@ Setup Steps (can expand / update / fix if there's interest).
         5. Copy the long hex string they give you  
     - jspm registry config github
     - Enter your username and paste the hex string for the password
-11. Setup JSPM for use: jspm init
-      Asks if you’d like to use a transpiler (select Babel).
+11. Setup JSPM for use: jspm init  
+      Asks if you’d like to use a transpiler (select Babel).  
       This creates jspm_pacakges and config.js in the local directory and adds JSPM config info to package.json
 12. Install your JS framework (usually Angular or Aurelia) jspm install aurelia-framework (note there’s no –save for JSPM)
     - This adds packages to jspm_packages and entries to package.json.
